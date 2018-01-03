@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b4913f7-8c10-49ea-b8e2-365f03c9ec9d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/foodwheel-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/foodwheel-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/foodwheel-solutions-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/foodwheel-solutions-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/foodwheel.ipynb" afterPath="$PROJECT_DIR$/foodwheel.ipynb" />
-      <change beforePath="$PROJECT_DIR$/foodwheel_analytics.py" afterPath="$PROJECT_DIR$/foodwheel_analytics.py" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../untitled/foodwheel_analytics.py" afterPath="" />
-    </list>
+    <list default="true" id="7b4913f7-8c10-49ea-b8e2-365f03c9ec9d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
