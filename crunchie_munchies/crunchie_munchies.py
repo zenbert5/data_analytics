@@ -29,12 +29,17 @@ print sorted_calorie
 median_calorie = np.median(calorie_stats)
 print "median calorie is %d" % median_calorie
 
+
 # .6 - calculate percentiles
+"""
 for x in range(1,101):
     if (np.percentile(sorted_calorie, x) > 100):
         low_perc = x
         break
-print "Lowest percentile with more than 100 calories is %d%%" % low_perc
+        
+"""
+low_perc = np.mean(sorted_calorie <=100)
+print "Lowest percentile with more than 100 calories is %.2f%%" % low_perc
 
 one_std = np.percentile(sorted_calorie, 68)
 two_std = np.percentile(sorted_calorie, 95)
