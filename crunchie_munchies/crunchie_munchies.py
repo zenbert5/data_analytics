@@ -36,10 +36,9 @@ for x in range(1,101):
     if (np.percentile(sorted_calorie, x) > 100):
         low_perc = x
         break
-        
 """
 low_perc = np.mean(sorted_calorie <=100)
-print "Lowest percentile with more than 100 calories is %.2f%%" % low_perc
+print "Lowest percentile with more than 100 calories is {:.2f}%".format(low_perc)
 
 one_std = np.percentile(sorted_calorie, 68)
 two_std = np.percentile(sorted_calorie, 95)
