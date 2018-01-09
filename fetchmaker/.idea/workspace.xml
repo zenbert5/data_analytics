@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eba18881-5c68-4b3d-971c-df72c11633f9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fetchmaker_main.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../hypo_test/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/../familiar/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../familiar/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../familiar/.ipynb_checkpoints/familiar_project-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../familiar/.ipynb_checkpoints/familiar_project-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/../familiar/familiar_project.ipynb" afterPath="$PROJECT_DIR$/../familiar/familiar_project.ipynb" />
-      <change beforePath="$PROJECT_DIR$/../hypo_test/.idea/hypo_test.iml" afterPath="$PROJECT_DIR$/../hypo_test/.idea/hypo_test.iml" />
-      <change beforePath="$PROJECT_DIR$/../hypo_test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hypo_test/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eba18881-5c68-4b3d-971c-df72c11633f9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +201,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="0" y="0" width="507" height="1054" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
