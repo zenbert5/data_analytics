@@ -9,7 +9,7 @@ version 1
 
 import pandas as pd
 from scipy.stats import chi2_contingency
-import numpy as np
+from scipy.stats import binom_test
 
 # load datafrae
 df = pd.read_csv("clicks.csv")
@@ -55,15 +55,20 @@ print "pval is {}".format(pval)
 df_l = len(df)
 
 # calculate % of visitors required to sell at 0.99, 1.99, 4.99 per upgrade kit, respectively
-c99_2_1000 = np.ceil(1000.0 / 0.99)
+c99_2_1000 = 1000.0 / 0.99
 c99_customer_ratio = c99_2_1000 / df_l
-print "@ 99c - ratio is {:.2f}".format(c99_customer_ratio)
+print "@ 99c - ratio is {:.4f}".format(c99_customer_ratio)
 
-c199_2_1000 = np.ceil(1000.0 / 1.99)
+c199_2_1000 = 1000.0 / 1.99
 c199_customer_ratio = c199_2_1000 / df_l
-print "@ $1.99 - ratio is {:.2f}".format(c199_customer_ratio)
+print "@ $1.99 - ratio is {:.4f}".format(c199_customer_ratio)
 
-c499_2_1000 = np.ceil(1000.0 / 4.99)
+c499_2_1000 = 1000.0 / 4.99
 c499_customer_ratio = c499_2_1000 / df_l
-print "@ $4.99 - ratio is {:.2f}".format(c499_customer_ratio)
+print "@ $4.99 - ratio is {:.4f}".format(c499_customer_ratio)
 
+print purchase_counts
+
+print "pval @ 0.99 purchased - {}".format(binom_test(316, 1666, c99_customer_ratio))
+print "pval @ 1.99 purchased - {}".format(binom_test(183, 1666, c199_customer_ratio))
+print "pval @ 4.99 purchased - {}".format(binom_test(83, 1666, c499_customer_ratio))
