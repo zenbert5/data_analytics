@@ -1,8 +1,8 @@
 """
 	Data Analytics Intro - Code Academy
 		Assignment: 	Betty's Bakery
-		Author		:		Shawn Chen
- 	 	Date:			:		Jan 1, 2018
+		Author	  :	Shawn Chen
+ 	 	Date:	  :	Jan 1, 2018
 """
 import numpy as np
 
