@@ -98,7 +98,49 @@ chi2, pval, dof, expected = chi2_contingency(contingency)
 
 print pval
 
+df['is_member'] = df.purchase_date.apply(lambda x: 'Member' if pd.notnull(x) else 'Not Member')
 
+just_apps = df[(pd.notnull(df.application_date))].reset_index()
 
+# print just_apps
 
+member_count = just_apps.groupby(['ab_test_group', 'is_member']).email.count().reset_index()
+member_pivot = member_count.pivot(
+    columns = 'is_member',
+    index = 'ab_test_group',
+    values = 'email'
+    ).reset_index()
 
+member_pivot['Total'] = member_pivot['Member'] + member_pivot['Not Member']
+member_pivot['Percent Purchase'] = member_pivot['Member'] / member_pivot['Total']
+
+print member_pivot
+
+contingency = [[member_pivot['Member'][0], member_pivot['Not Member'][0]],
+               [member_pivot['Member'][1], member_pivot['Not Member'][1]]]
+
+# calculate pval
+chi2, m_pval, dof, expected = chi2_contingency(contingency)
+
+print m_pval
+
+all_visitors_purchased = df.groupby(['ab_test_group', 'is_member']).email.count().reset_index()
+
+final_member_pivot = all_visitors_purchased.pivot(
+    columns = 'is_member',
+    index = 'ab_test_group',
+    values = 'email'
+    ).reset_index()
+
+final_member_pivot['Total'] = final_member_pivot['Member'] + final_member_pivot['Not Member']
+final_member_pivot['Percent Purchase'] = final_member_pivot['Member'] / final_member_pivot['Total']
+
+print final_member_pivot
+
+contingency = [[final_member_pivot['Member'][0], final_member_pivot['Not Member'][0]],
+               [final_member_pivot['Member'][1], final_member_pivot['Not Member'][1]]]
+
+# calculate significance
+chi2, fm_pval, dof, expected = chi2_contingency(contingency)
+
+print fm_pval
